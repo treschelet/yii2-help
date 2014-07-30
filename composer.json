@@ -1,0 +1,22 @@
+{
+	"name": "treschelet/yii2-help",
+	"description": "Help module",
+	"type": "yii2-extension",
+	"keywords": ["yii2","extension"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Treschelet",
+			"email": "treschelet@gmail.com"
+		}
+	],
+    "require": {
+        "yiisoft/yii2": "*",
+        "mihaildev/yii2-ckeditor": "*"
+    },
+	"autoload": {
+		"psr-4": {
+			"treschelet\\help\\": ""
+		}
+	}
+}
