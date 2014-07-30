@@ -4,20 +4,20 @@
  * Date: 10.07.14
  */
 
-namespace treschelet\news;
+namespace treschelet\help;
 
 use yii\base\BootstrapInterface;
 
 class Module extends \yii\base\Module implements BootstrapInterface
 {
-    public $controllerNamespace = 'treschelet\news\controllers';
+    public $controllerNamespace = 'treschelet\help\controllers';
 
     public function init()
     {
         parent::init();
 
         $this->setAliases([
-            '@news' => __DIR__
+            '@help' => __DIR__
         ]);
     }
 
