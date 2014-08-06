@@ -43,10 +43,10 @@ class Help extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'content' => 'Content',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            'title' => 'Название',
+            'content' => 'Содержание',
+            'created_at' => 'Добавлен',
+            'updated_at' => 'Обновлен',
         ];
     }
 }
