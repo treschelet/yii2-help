@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use mihaildev\ckeditor\CKEditor;
+use mihaildev\elfinder\ElFinder;
 
 /* @var $this yii\web\View */
 /* @var $model treschelet\help\models\Help */
@@ -16,11 +17,11 @@ use mihaildev\ckeditor\CKEditor;
     <?= $form->field($model, 'title')->textInput(['maxlength' => 255]) ?>
 
     <?= $form->field($model, 'content')->widget(CKEditor::className(),[
-        'editorOptions' => [
+        'editorOptions' => ElFinder::ckeditorOptions('elfinder', [
             'preset' => 'full', //разработанны стандартные настройки basic, standard, full данную возможность не обязательно использовать
             'inline' => false, //по умолчанию false
             'allowedContent' => true,
-        ],
+        ]),
     ]); ?>
 
     <div class="form-group">
